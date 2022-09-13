@@ -30,9 +30,9 @@ Through careful trial and error, I identified that an awaited `findByText('Loadi
 I plan to open an issue (question) with the RTL maintainers so I understand why we see this behavior.
 
 ## How to use this repo
-After `npm i`, use `npm t` to run the tests and see the warning (or use `test:nowatch` if you prefer).  There are two tests you can try, one that generates the warning, and one that does NOT.  The only difference is the use of async utilities like `findByText` or `waitFor` on the "Loading..." text.  Feel free to skip individual tests to see the difference in warning output.
+After `npm i`, use `npm t` to run the tests and see the warning (or use `npm run test:nowatch` if you prefer).  There are two tests you can try, one that generates the warning, and one that does NOT.  The only difference is the use of async utilities like `findByText` or `waitFor` on the "Loading..." text.  Feel free to skip individual tests to see the difference in warning output.
 
 Using `npm start` will open the test application in a browser to see it visually, if desired.  Throttle the network speed in your devtools to see "Loading..." if needed.
 
 ## Warning
-The API endpoint this uses will occasionally have CORS errors.  I wonder if the are load balancing servers and one of them doesn't allow CORS.  Simply keep trying if you get such an error.
+The API endpoint this uses will occasionally have CORS errors, when testing in a browser.  I wonder if the API owner is load balancing servers and one of them doesn't allow CORS.  Simply keep trying if you get such an error.
