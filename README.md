@@ -16,7 +16,6 @@ Ever seen this testing React apps? :)
     /* assert on the output */
     
     This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
-        at App (/Users/WCANEIRA/code/act-warning-mcve/src/App.js:4:39)
 ```
 
 From what little I understand, the infamous "act warning" can occur for a couple [different reasons](https://davidwcai.medium.com/react-testing-library-and-the-not-wrapped-in-act-errors-491a5629193b), such as state changes being triggered by async updates outside React's call stack, or because a test ends before React is done updating.  [This article](https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning) is also a decent read.   
